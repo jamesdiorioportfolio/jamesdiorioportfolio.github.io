@@ -1,0 +1,224 @@
+<html>
+    <head>
+        <style>
+             body {
+                background-color: rgb(39, 39, 39);
+            }
+            header {
+                background-image: url("../Images/Screenshot 2026-04-11 172548 (1).png");
+                background-size: cover;
+                background-position: center;
+                display: flex;
+                justify-content: center;
+                align-items: flex-end; /* changed from center */
+                margin: 0;
+                padding: 0;
+                width: 100vw;
+                height: 300px;
+                padding-bottom: 20px; /* adjust this number */
+}
+            header h1 {
+                color: rgb(0, 0, 0);
+                font-family: 'Inter', sans-serif;
+                font-weight: bold;
+                font-size: 60px;
+
+                background-color: white;
+                
+                padding: 5px 10px;
+                border-radius: 20px;
+            }
+            p {
+                color: white;
+                font-family: 'Inter', sans-serif;
+                font-size: 25px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                padding-left: 10px;
+                padding-right: 10px;
+                background-color: rgb(27, 27, 27);
+                border-radius: 20px;
+            }
+            /* header img {
+                width: 100%;
+                height: 300px;
+                object-fit: cover;
+                padding-top: 0px;
+            } */
+            section {
+                height: 50px;
+                width: 100vw;
+                background-color: black;
+
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+            section .buttons {
+                display: flex;
+            }
+            section .pcb-btn {
+                background-color: rgb(0, 0, 0);
+                color: white;
+                border: none;
+                padding-top: 16px;
+                padding-bottom: 13px;
+                padding-left: 5px;
+                padding-right: 5px;
+                cursor: pointer;
+                font-size: 17px;
+                font-family: 'Inter', sans-serif;
+                
+            }
+            section .pcb-btn:hover {
+                background-color: rgb(55, 55, 55);
+                transform: scale(1.05);
+            }
+            section .home-btn {
+                background-color: rgb(0, 0, 0);
+                color: white;
+                border: none;
+                padding-top: 16px;
+                padding-bottom: 13px;
+                padding-left: 5px;
+                padding-right: 5px;
+                cursor: pointer;
+                font-size: 17px;
+                font-family: 'Inter', sans-serif;
+                
+            }
+            section .home-btn:hover {
+                background-color: rgb(55, 55, 55);
+                transform: scale(1.05);
+            }
+            section h2 {
+                font-family: 'Inter', sans-serif;
+                color: white;
+                size: 10px;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                padding-left: 10px;
+                padding-right: 5px;
+            }
+            section .practical-btn {
+                background-color: rgb(0, 0, 0);
+                color: white;
+                border: none;
+                padding-top: 16px;
+                padding-bottom: 13px;
+                padding-left: 5px;
+                padding-right: 5px;
+                cursor: pointer;
+                font-size: 17px;
+                font-family: 'Inter', sans-serif;
+            }
+            section .practical-btn:hover {
+                background-color: rgb(55, 55, 55);
+                transform: scale(1.05);
+            }
+            section .mini-cad-btn {
+                background-color: rgb(0, 0, 0);
+                color: white;
+                border: none;
+                margin-right: 15px;
+                padding-top: 16px;
+                padding-bottom: 13px;
+                padding-right: 5px;
+                cursor: pointer;
+                font-size: 17px;
+                font-family: 'Inter', sans-serif;
+            }
+            section .mini-cad-btn:hover {
+                background-color: rgb(55, 55, 55);
+                transform: scale(1.05);
+            }
+            .img1, .img2, .img3 {
+                width: 400px;
+            }
+             .bracket-dwnldv1 {
+                background-color: mediumpurple;
+                border: none;
+                border-radius: 12px;
+                padding: 5px;
+                margin-left: 25px;
+                font-family: "roboto", sans-serif;
+                color: white;
+            }
+            .bracket-dwnldv2 {
+                background-color: mediumpurple;
+                border: none;
+                border-radius: 12px;
+                padding: 5px;
+                margin-left: 25px;
+                font-family: "roboto", sans-serif;
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <section>
+            <h2>James Diorio</h2>
+            <div class="buttons">
+                <a href="Website.html">
+                    <button class="home-btn">Home</button>
+                </a>
+                <a href="pcbs.html">
+                    <button class="pcb-btn">PCBs</button>
+                </a>
+                <a href="Practical Projects.html">
+                    <button class="practical-btn">Practical Projects</button>
+                </a>
+                <a href="Mini CAD Projects.html">
+                    <button class="mini-cad-btn">Small CAD Projects</button>
+                </a>
+                <a href="Applications.html">
+                    <button class="apps-btn">Applications</button>
+                </a>
+            </div>
+            
+        </section>
+        <header>
+            <h1>Applications</h1>
+        </header>
+        <p>
+          This section of the website covers applications I have either vibe-coded, or coded to help the community. Many of the apps will most likely cover niche engineering topics, and/or apps I have made for personal use. Apps I coded myself will teach me software engineering to help code some software for other projects.
+        </p>
+        <select onchange="showContent()" id="Apps" style="background-color: rgb(31, 31, 31); color: white; border: none; border-radius: 8px; font-size: 35px; text-align: center;">
+            <option value="">-- Select a Project --</option>
+            <option value="Tracescope"> PCB Checker App | completed: 4/11/2026</option>
+        </select>
+                
+            <div id="bracket-for-workbench" style="display:none;">
+                <p>
+                    The first project I will log is a simple bracket. At this point in time I recently moved to a new workbench with a lot of new space and a built-in power strip. However the power built into the bench had two 120 volt outlets and two usb outlets. I would need more outlets to efficiently create projects. My solution was to velcro a separate power strip to the bench and that solution was clean and quick. Although the new power strip had many outlets, there was still a problem: the power strips’ cable was large and stiff. This cable stuck out of the bench and looked ugly, making the workbench look unclean.
+                </p>
+                <p>
+                    My solution to this problem was to make a bracket that would hold the stubborn cable up the side of the bench, making the cable management look more “professional.” So I spent the next few hours learning a few more CAD skills and came out with version 0.1. This bracket worked by using halves to press the cord against the side. There was a perfectly sized groove that the cord would slip into and two protrusions sticking out each side. The protrusions would press the two halves together. In the middle of those features was a 6 millimeter hole, which I would use to attempt to design snap fits. Snap fits are a smart way of securing parts together without screws or bolts. They work by pushing it into the desired groove or hole, and once they reach a certain point, will snap into place. I have attempted snap fits before and they just kept breaking so I switched to nuts and bolts. This made me cautious, but I still managed to pull it off. The first prototype 0.1 failed. Not only did the 3D printer fail to print one half, but the snap fits broke. This put me down a little but I persevered and revised the design until I reached version 0.2. I made a few improvements to this design. First, I made the bracket a little thicker, so it would stick to the printer more. Secondly, I decreased the radius at the end of the snap fits to require less force to snap into place. Another improvement was adding filetts and more girth to the area where the snap fits broke. Finally, I increased the infill for the snap fits to make them stiffer. These revisions ended up fixing all of the problems with the bracket and fixed my problem with the ugly power strip cable.
+                </p>
+                <p>
+                    In conclusion, this project was a small success that made me learn, persevere, and solve real-world problems. I was proud of myself with this design because this is the first time that I have used advanced CAD software to fix a problem. 
+                </p>
+                <p>These are some images of the finished product:</p>
+                <img src="../Images/Bracket for workbench/IMG_0222.jpeg" class="img1">
+                <img src="../Images/Bracket for workbench/IMG_0223.jpeg" class="img2">
+                <img src="../Images/Bracket for workbench/IMG_0224.jpeg" class="img3">
+                <p>These are some models you can download and look at in 3d software(or view the final version in the embeded section):</p>
+                <a href="../models/BracketwRivetsv0.1.zip" class="bracket-dwnld-lnkv1"><button class="bracket-dwnldv1">download v1</button></a>
+                <a href="../models/BracketwRivetsv0.2.zip" class="bracket-dwnld-lnkv2"><button class="bracket-dwnldv2">download v2</button></a>
+                
+                <model-viewer src="../models/gold_bracket_for_website.glb"
+                    alt="My CAD model"
+                    auto-rotate
+                    camera-controls
+                    exposure="0.3"
+                    shadow-intensity="0"
+                    environment-image="https://modelviewer.dev/shared-assets/environments/moon_1k.hdr"
+                    style="width: 50%; height: 500px; background-color: rgb(31, 31, 31); border-radius: 20px; margin-top: 20px; left: 5px;" 
+                    class="model-viewer">
+                </model-viewer>
+                
+            </div>
+            <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+            <script src="../Js/mini-cad.js"></script>
+    </body>
+</html>
