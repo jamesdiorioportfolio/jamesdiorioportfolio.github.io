@@ -185,3 +185,12 @@ section .apps-btn:hover {
     border: none;
     display: block;
 }
+.tracescope-dwnld {
+    background-color: mediumpurple;
+    border: none;
+    border-radius: 12px;
+    padding: 5px;
+    margin-left: 25px;
+    font-family: "roboto", sans-serif;
+    color: white;
+}
