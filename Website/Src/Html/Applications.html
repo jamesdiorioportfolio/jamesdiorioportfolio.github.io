@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="../CSS/style.css">
+        <title>
+            Applications
+        </title>
+        <link rel="icon" type="image/x-icon" href="../Images/favicon.ico">
+    </head>
+    <body>
+        <iframe
+    src="nav.html"
+    class="navigation-frame"
+    title="Navigation">
+    </iframe>
+        <header>
+            <h1>Applications</h1>
+        </header>
+        <p>
+          This section of the website covers applications I have either vibe-coded, or coded to help the community. Many of the apps will most likely cover niche engineering topics, and/or apps I have made for personal use. Apps I coded myself will teach me software engineering to help code some software for other projects.
+        </p>
+        <select onchange="showContent()" id="apps" style="background-color: rgb(31, 31, 31); color: white; border: none; border-radius: 8px; font-size: 35px; text-align: center;">
+            <option value="">-- Select a Project --</option>
+            <option value="tracescope"> PCB Checker App | completed: 4/11/2026</option>
+        </select>
+                
+            <div id="tracescope" style="display:none;">
+                <p>
+                    To read about Tracescope, I have linked a pdf file with the document:
+                    <a href="../PDF/Tracescope.pdf" class="tracsecope-doc-dwnld-lnk"><button class="tracescope-dwnld">Download Domcumentation</button></a>
+                </p>
+            </div>
+            <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+            <script src="../Js/apps.js"></script>
+    </body>
+</html>
