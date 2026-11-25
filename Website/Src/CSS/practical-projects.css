@@ -1,0 +1,24 @@
+.practical-projects-select {
+    display: block;
+    margin: 20px auto;
+    padding: 8px 14px;
+    background-color: rgb(31, 31, 31);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 28px;
+    text-align: center;
+}
+.practical-project-panel {
+    margin: 20px;
+}
+.practical-project-download {
+    display: inline-block;
+    background-color: mediumpurple;
+    border-radius: 12px;
+    padding: 8px 12px;
+    margin-left: 25px;
+    font-family: "roboto", sans-serif;
+    color: white;
+    text-decoration: none;
+}

@@ -1,20 +1,27 @@
 <html>
     <head>
-        <title>
-            Practical Projects
-        </title>
-       <link rel="stylesheet" href="../CSS/style.css">
-       <link rel="icon" type="image/x-icon" href="../Images/favicon.ico">
+        <title>Practical Projects</title>
+        <link rel="stylesheet" href="../CSS/style.css">
+        <link rel="stylesheet" href="../CSS/practical-projects.css">
+        <link rel="icon" type="image/x-icon" href="../Images/favicon.ico">
     </head>
     <body>
         <iframe
-    src="nav.html"
-    class="navigation-frame"
-    title="Navigation">
-    </iframe>
+            src="nav.html"
+            class="navigation-frame"
+            title="Navigation">
+        </iframe>
         <header>
             <h1>Practical Projects</h1>
         </header>
-        
+        <select onchange="showPracticalProject()" id="practical-projects-select" class="practical-projects-select">
+            <option value="">-- Select a Project --</option>
+            <option value="voltage-divider">Voltage Divider</option>
+        </select>
+        <div id="voltage-divider" class="practical-project-panel" hidden>
+            <p>Voltage Divider</p>
+            <a href="../PDF/Voltage Divider.pdf" class="practical-project-download" target="_blank" rel="noopener">Open Voltage Divider PDF</a>
+        </div>
+        <script src="../Js/practical-projects.js"></script>
     </body>
 </html>
