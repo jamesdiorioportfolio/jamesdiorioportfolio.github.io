@@ -1,4 +1,4 @@
-.practical-projects-select {
+.project-select {
     display: block;
     margin: 20px auto;
     padding: 8px 14px;
@@ -9,10 +9,10 @@
     font-size: 28px;
     text-align: center;
 }
-.practical-project-panel {
+.project-panel {
     margin: 20px;
 }
-.practical-project-download {
+.project-download {
     display: inline-block;
     background-color: mediumpurple;
     border-radius: 12px;

@@ -1,6 +1,7 @@
 <html>
     <head>
         <link rel="stylesheet" href="../CSS/style.css">
+        <link rel="stylesheet" href="../CSS/practical-projects.css">
         <title>
             Applications
         </title>
@@ -21,13 +22,18 @@
         <select onchange="showContent()" id="apps" style="background-color: rgb(31, 31, 31); color: white; border: none; border-radius: 8px; font-size: 35px; text-align: center;">
             <option value="">-- Select a Project --</option>
             <option value="tracescope"> PCB Checker App | completed: 4/11/2026</option>
+            <option value="boids">Boids</option>
         </select>
                 
-            <div id="tracescope" style="display:none;">
+            <div id="tracescope" class="project-panel" hidden>
                 <p>
                     To read about Tracescope, I have linked a pdf file with the document:
                     <a href="../PDF/Tracescope.pdf" class="tracsecope-doc-dwnld-lnk"><button class="tracescope-dwnld">Download Domcumentation</button></a>
                 </p>
+            </div>
+            <div id="boids" class="project-panel" hidden>
+                <p>Boids</p>
+                <a href="../PDF/Method.pdf" class="project-download" target="_blank" rel="noopener">Open Boids PDF</a>
             </div>
             <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
             <script src="../Js/apps.js"></script>
