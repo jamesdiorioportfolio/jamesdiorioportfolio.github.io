@@ -367,3 +367,20 @@ section .apps-btn:hover {
     .project-entry .project-section { flex-basis: 100%; min-width: 0; }
     .home-project-picker { margin: 16px 12px; padding: 18px; }
 }
+/* Keep the homepage project picker independent of the navigation bar layout. */
+section.home-project-picker {
+    box-sizing: border-box;
+    display: block;
+    width: min(1100px, calc(100% - 48px));
+    height: auto;
+    margin: 24px auto;
+    padding: 24px;
+    background: linear-gradient(145deg, rgb(35, 35, 43), rgb(27, 27, 32));
+}
+@media (max-width: 700px) {
+    section.home-project-picker {
+        width: calc(100% - 24px);
+        margin: 16px auto;
+        padding: 18px;
+    }
+}
