@@ -1,66 +1,104 @@
 <html>
     <head>
         <link rel="stylesheet" href="../CSS/style.css">
-        <title>
-            Small CAD Projects
-        </title>
+        <link rel="stylesheet" href="../CSS/practical-projects.css">
+        <title>Small CAD Projects</title>
         <link rel="icon" type="image/x-icon" href="../Images/favicon.ico">
     </head>
     <body>
-        <iframe
-    src="nav.html"
-    class="navigation-frame"
-    title="Navigation">
-    </iframe>
-        <header id="mini-cad-header">
-            <h1>Small CAD Projects</h1>
-        </header>
-        <p>
-            This section of my website mostly covers CAD projects that help me learn about the CAD software I use. These projects increase my understanding of the software and teach me how to think like an engineer. This is important because robotics revolves around engineering and part design.
-        </p>
-        <select onchange="showContent()" id="mini-cad-prjcts" style="background-color: rgb(31, 31, 31); color: white; border: none; border-radius: 8px; font-size: 35px; text-align: center;">
+        <iframe src="nav.html" class="navigation-frame" title="Navigation"></iframe>
+        <header id="mini-cad-header"><h1>Small CAD Projects</h1></header>
+        <p>This section covers CAD projects that build design skills and solve practical problems.</p>
+        <select onchange="showContent()" id="mini-cad-prjcts" class="project-select">
             <option value="">-- Select a Project --</option>
-            <option value="bracket-for-workbench">Bracket For Workbench | completed: 4/11/2026</option>
-            <option value="iphone-holder">Iphone Holder For Wireless Charging | completed: 8/25/2026</option>
+            <option value="bracket-for-workbench">Bracket for Workbench | completed: 4/11/2026</option>
+            <option value="iphone-holder">iPhone Holder for Wireless Charging | completed: 8/25/2026</option>
         </select>
-                
-            <div id="bracket-for-workbench" style="display:none;">
-                <p>
-                    The first project I will log is a simple bracket. At this point in time I recently moved to a new workbench with a lot of new space and a built-in power strip. However the power built into the bench had two 120 volt outlets and two usb outlets. I would need more outlets to efficiently create projects. My solution was to velcro a separate power strip to the bench and that solution was clean and quick. Although the new power strip had many outlets, there was still a problem: the power strips’ cable was large and stiff. This cable stuck out of the bench and looked ugly, making the workbench look unclean.
-                </p>
-                <p>
-                    My solution to this problem was to make a bracket that would hold the stubborn cable up the side of the bench, making the cable management look more “professional.” So I spent the next few hours learning a few more CAD skills and came out with version 0.1. This bracket worked by using halves to press the cord against the side. There was a perfectly sized groove that the cord would slip into and two protrusions sticking out each side. The protrusions would press the two halves together. In the middle of those features was a 6 millimeter hole, which I would use to attempt to design snap fits. Snap fits are a smart way of securing parts together without screws or bolts. They work by pushing it into the desired groove or hole, and once they reach a certain point, will snap into place. I have attempted snap fits before and they just kept breaking so I switched to nuts and bolts. This made me cautious, but I still managed to pull it off. The first prototype 0.1 failed. Not only did the 3D printer fail to print one half, but the snap fits broke. This put me down a little but I persevered and revised the design until I reached version 0.2. I made a few improvements to this design. First, I made the bracket a little thicker, so it would stick to the printer more. Secondly, I decreased the radius at the end of the snap fits to require less force to snap into place. Another improvement was adding filetts and more girth to the area where the snap fits broke. Finally, I increased the infill for the snap fits to make them stiffer. These revisions ended up fixing all of the problems with the bracket and fixed my problem with the ugly power strip cable.
-                </p>
-                <p>
-                    In conclusion, this project was a small success that made me learn, persevere, and solve real-world problems. I was proud of myself with this design because this is the first time that I have used advanced CAD software to fix a problem. 
-                </p>
-                <p>These are some images of the finished product:</p>
-                <img src="../Images/Bracket for workbench/IMG_0222.jpeg" class="img1">
-                <img src="../Images/Bracket for workbench/IMG_0223.jpeg" class="img2">
-                <img src="../Images/Bracket for workbench/IMG_0224.jpeg" class="img3">
-                <p>These are some models you can download and look at in 3d software(or view the final version in the embeded section):</p>
-                <a href="../models/BracketwRivetsv0.1.zip" class="bracket-dwnld-lnkv1"><button class="bracket-dwnldv1">download v1</button></a>
-                <a href="../models/BracketwRivetsv0.2.zip" class="bracket-dwnld-lnkv2"><button class="bracket-dwnldv2">download v2</button></a>
-                
-                <model-viewer src="../models/gold_bracket_for_website.glb"
-                    alt="My CAD model"
-                    auto-rotate
-                    camera-controls
-                    exposure="0.3"
-                    shadow-intensity="0"
-                    environment-image="https://modelviewer.dev/shared-assets/environments/moon_1k.hdr"
-                    style="width: 50%; height: 500px; background-color: rgb(31, 31, 31); border-radius: 20px; margin-top: 20px; left: 5px;" 
-                    class="model-viewer">
-                </model-viewer>
-                
+
+        <article id="bracket-for-workbench" class="project-entry" style="display:none;">
+            <h2>Bracket for Workbench</h2>
+            <p class="project-meta"><strong>Project name:</strong> Bracket for Workbench<br><strong>Date:</strong> April 11, 2026<br><strong>Category:</strong> Other - mechanical design</p>
+            <div class="project-section"><h3>1. PROBLEM AND OBJECTIVE</h3>
+                <p><strong>Problem:</strong> The power-strip cable was thick and stiff, stuck out from the workbench, and made the workspace look untidy.</p>
+                <p><strong>Objective:</strong> Hold the cable neatly against the side of the workbench while keeping the power strip usable.</p>
             </div>
-            <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-            <script src="../Js/mini-cad.js"></script>
-            <div id="iphone-holder" style="display: none;">
-                <p>I have linked a pdf with the documentation:</p>
-                <a href="../PDF/Phone Holder.pdf"><button class="bracket-dwnldv1">Download documentation</button></a>
-                <p>Images:</p>
-                <img src="../Images/IMG_0572.JPG" width="900px" height="1600px">
+            <div class="project-section"><h3>2. TOOLS AND TECHNOLOGIES</h3>
+                <p><strong>Hardware, components and materials:</strong> Workbench, power strip and cable, 3D-printed bracket prototypes, and nuts and bolts. The printer model and filament are not listed.</p>
+                <p><strong>Software and programming languages:</strong> CAD software was used, but its name is not listed. No programming was involved.</p>
             </div>
+            <div class="project-section"><h3>3. SOLUTION DESIGN AND DEVELOPMENT</h3>
+                <p>The bracket uses two halves and a groove to hold the cable against the bench. The design went through versions 0.1 and 0.2. Version 0.2 was made thicker, with revised snap-fit geometry, added reinforcement and higher infill. The write-up also notes changing to nuts and bolts.</p>
+            </div>
+            <div class="project-section"><h3>4. CHALLENGES AND PROBLEM-SOLVING</h3>
+                <p>The first prototype did not print correctly, and its snap fits broke. The next version revised the part thickness, snap-fit radius and reinforcement. The report says the revision resolved the problems.</p>
+            </div>
+            <div class="project-section"><h3>5. TESTING AND RESULTS</h3>
+                <p>The first prototype failed. The revised bracket held the cable against the workbench and improved cable management. The report includes no measurements or formal test procedure.</p>
+            </div>
+            <div class="project-section"><h3>6. LESSONS LEARNED AND FUTURE IMPROVEMENTS</h3>
+                <p>The project built CAD and prototyping experience, especially around snap fits, reinforcement and iteration. Future work could document the exact fastener choice and compare the two versions with measurements.</p>
+            </div>
+            <div class="project-section"><h3>7. INDIVIDUAL CONTRIBUTIONS AND RESOURCES</h3>
+                <p>The write-up describes the design and revisions in first person and does not name collaborators. The workbench, power strip and cable defined the design requirements.</p>
+            </div>
+            <div class="project-section"><h3>SUPPORTING MATERIALS</h3>
+                <ul class="project-materials">
+                    <li>[x] Project photographs - three installed views are shown below.</li>
+                    <li>[ ] Demonstration video - not included.</li>
+                    <li>[ ] Source code - not applicable.</li>
+                    <li>[ ] Diagrams and schematics - not applicable.</li>
+                    <li>[x] Test results - prototype outcome is described in the project text.</li>
+                    <li>[x] Reference links - downloadable CAD models and a 3D model are provided.</li>
+                </ul>
+                <div class="project-gallery">
+                    <figure><img src="../Images/Bracket for workbench/IMG_0222.jpeg" alt="Bracket holding the workbench power cable, first view"><figcaption>Installed bracket - first view</figcaption></figure>
+                    <figure><img src="../Images/Bracket for workbench/IMG_0223.jpeg" alt="Bracket holding the workbench power cable, second view"><figcaption>Installed bracket - second view</figcaption></figure>
+                    <figure><img src="../Images/Bracket for workbench/IMG_0224.jpeg" alt="Bracket holding the workbench power cable, third view"><figcaption>Installed bracket - third view</figcaption></figure>
+                </div>
+                <model-viewer src="../models/gold_bracket_for_website.glb" alt="3D model of the workbench cable bracket" auto-rotate camera-controls exposure="0.3" shadow-intensity="0" environment-image="https://modelviewer.dev/shared-assets/environments/moon_1k.hdr" class="project-model"></model-viewer>
+            </div>
+        </article>
+
+        <article id="iphone-holder" class="project-entry" style="display:none;">
+            <h2>iPhone Holder for Wireless Charging</h2>
+            <p class="project-meta"><strong>Project name:</strong> iPhone Holder for Wireless Charging<br><strong>Date:</strong> August 25, 2026<br><strong>Category:</strong> Other - mechanical design</p>
+            <div class="project-section"><h3>1. PROBLEM AND OBJECTIVE</h3>
+                <p><strong>Problem:</strong> Phones and charging cables cluttered the kitchen bench. Moving them into a cabinet created a new question: how to mount the phones beside an outlet.</p>
+                <p><strong>Objective:</strong> Design holders that keep phones in place while they charge and reduce clutter.</p>
+            </div>
+            <div class="project-section"><h3>2. TOOLS AND TECHNOLOGIES</h3>
+                <p><strong>Hardware, components and materials:</strong> Phones, charging cables, an external outlet and the cabinet installation. The holder material and fabrication method are not specified in the write-up.</p>
+                <p><strong>Software and programming languages:</strong> Onshape CAD; no programming was involved.</p>
+            </div>
+            <div class="project-section"><h3>3. SOLUTION DESIGN AND DEVELOPMENT</h3>
+                <p>The holder was modeled in Onshape and developed over four iterations with different dimensions and approaches. The final design supports both magnetic and cable charging.</p>
+            </div>
+            <div class="project-section"><h3>4. CHALLENGES AND PROBLEM-SOLVING</h3>
+                <p>Finding a way to mount the phones and fit the charging connections required four design iterations. After the fourth version, the openings around the Lightning/USB connections were found to be oversized. The write-up says function was prioritized over appearance.</p>
+            </div>
+            <div class="project-section"><h3>5. TESTING AND RESULTS</h3>
+                <p>A phone can slide into the holder and charge. The installed design is described as robust and functional enough for daily use, though not perfect.</p>
+            </div>
+            <div class="project-section"><h3>6. LESSONS LEARNED AND FUTURE IMPROVEMENTS</h3>
+                <p>The project built CAD experience and showed how measurements from phones and charging hardware can guide a fitted design. A future version could refine the oversized connection openings and appearance.</p>
+            </div>
+            <div class="project-section"><h3>7. INDIVIDUAL CONTRIBUTIONS AND RESOURCES</h3>
+                <p>The write-up describes designing the holder in first person and does not name outside assistance. The cabinet, outlet, phones and charging hardware set the design constraints.</p>
+            </div>
+            <div class="project-section"><h3>SUPPORTING MATERIALS</h3>
+                <ul class="project-materials">
+                    <li>[x] Project photographs - the installed holders and charging setup are shown below.</li>
+                    <li>[ ] Demonstration video - not included.</li>
+                    <li>[ ] Source code - not applicable.</li>
+                    <li>[ ] Diagrams and schematics - a dimensioned drawing is not linked.</li>
+                    <li>[x] Test results - everyday charging use is described in the project text.</li>
+                    <li>[x] Reference link - project documentation PDF.</li>
+                </ul>
+                <div class="project-gallery"><figure><img src="../Images/IMG_0572.JPG" alt="Phone holders installed inside a cabinet beside a charging hub"><figcaption>Installed phone holders and charging setup</figcaption></figure></div>
+            </div>
+        </article>
+
+        <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+        <script src="../Js/mini-cad.js"></script>
     </body>
 </html>

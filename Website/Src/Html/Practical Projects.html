@@ -6,22 +6,50 @@
         <link rel="icon" type="image/x-icon" href="../Images/favicon.ico">
     </head>
     <body>
-        <iframe
-            src="nav.html"
-            class="navigation-frame"
-            title="Navigation">
-        </iframe>
-        <header>
-            <h1>Practical Projects</h1>
-        </header>
+        <iframe src="nav.html" class="navigation-frame" title="Navigation"></iframe>
+        <header><h1>Practical Projects</h1></header>
         <select onchange="showPracticalProject()" id="project-select" class="project-select">
             <option value="">-- Select a Project --</option>
             <option value="voltage-divider">Voltage Divider</option>
         </select>
-        <div id="voltage-divider" class="project-panel" hidden>
-            <p>Voltage Divider</p>
-            <a href="../PDF/Voltage Divider.pdf" class="project-download" target="_blank" rel="noopener">Open Voltage Divider PDF</a>
-        </div>
+        <article id="voltage-divider" class="project-panel project-entry" hidden>
+            <h2>Voltage Divider</h2>
+            <p class="project-meta"><strong>Project name:</strong> Voltage Divider<br><strong>Date:</strong> October 3 (year not listed)<br><strong>Category:</strong> Electronics</p>
+
+            <div class="project-section"><h3>1. PROBLEM AND OBJECTIVE</h3>
+                <p><strong>Problem:</strong> The built-in light on the Bambu Lab P1S printer seemed too dim. A discarded homemade light was available, but it required 15 volts and there was no power supply for it.</p>
+                <p><strong>Objective:</strong> Build a power source that could run the light and improve visibility around the printer.</p>
+            </div>
+            <div class="project-section"><h3>2. TOOLS AND TECHNOLOGIES</h3>
+                <p><strong>Hardware, components and materials:</strong> Two 9-volt batteries, a 10 kΩ resistor, a 10 kΩ variable resistor (potentiometer), a switch, the homemade light and the Bambu Lab P1S printer.</p>
+                <p><strong>Software and programming languages:</strong> None listed.</p>
+            </div>
+            <div class="project-section"><h3>3. SOLUTION DESIGN AND DEVELOPMENT</h3>
+                <p>The design used a voltage divider to adjust the battery output. The first wiring attempt was incorrect. In the revised wiring, the positive connection went to the battery and the ground connection went to the point between the two resistors. A switch was added to turn the system on and off before connecting it to the printer light.</p>
+            </div>
+            <div class="project-section"><h3>4. CHALLENGES AND PROBLEM-SOLVING</h3>
+                <p>The first circuit did not provide the intended output because it was wired incorrectly. The wiring was corrected before the system was connected to the printer.</p>
+            </div>
+            <div class="project-section"><h3>5. TESTING AND RESULTS</h3>
+                <p>The revised circuit was connected to the printer light. The write-up does not record a measured output voltage or say how bright the light was afterward.</p>
+            </div>
+            <div class="project-section"><h3>6. LESSONS LEARNED AND FUTURE IMPROVEMENTS</h3>
+                <p>The project provided hands-on practice with voltage-divider wiring and troubleshooting. A useful next step would be to record the output voltage and verify the light's performance under load.</p>
+            </div>
+            <div class="project-section"><h3>7. INDIVIDUAL CONTRIBUTIONS AND RESOURCES</h3>
+                <p>The write-up describes building and correcting the circuit in first person. A family friend had supplied the discarded light. Other assistance is not mentioned.</p>
+            </div>
+            <div class="project-section"><h3>SUPPORTING MATERIALS</h3>
+                <ul class="project-materials">
+                    <li>[ ] Project photographs - circuit and installed light photos still needed.</li>
+                    <li>[ ] Demonstration video - not included.</li>
+                    <li>[ ] Source code - not applicable.</li>
+                    <li>[ ] Diagrams and schematics - a circuit diagram would be useful.</li>
+                    <li>[ ] Test results - final voltage and brightness measurements are not recorded.</li>
+                    <li>[x] Reference link - project write-up PDF.</li>
+                </ul>
+            </div>
+        </article>
         <script src="../Js/practical-projects.js"></script>
     </body>
 </html>
