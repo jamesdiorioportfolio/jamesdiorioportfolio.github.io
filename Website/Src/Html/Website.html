@@ -17,5 +17,25 @@
         <p>
             This website was created in March 2026 by James Diorio, a middle school student who loves robotics. James has made many projects and will be sharing them on this website. The shared projects will include descriptions, the process it took to build, failed attempts, successful attemps, and much more information describing the project. James is interested in robotics and pcb design. Also, James is twelve years old and goes to SBMS. He has a passion to attend Princeton University and will work hard to achieve that goal.
         </p>
+        <section class="home-project-picker" aria-labelledby="project-picker-title">
+            <h2 id="project-picker-title">Explore the project archive</h2>
+            <p>Choose a project to open its full story, organized by completion date.</p>
+            <select id="home-project-select" aria-label="Choose a project" onchange="openPortfolioProject()">
+                <option value="">Select a project...</option>
+                <option value="Applications.html#failed-dev-board-v1">Failed Developer Board v1 · Aug 27, 2026 (estimated)</option>
+                <option value="Mini CAD Projects.html#iphone-holder">iPhone Holder for Wireless Charging · Aug 25, 2026</option>
+                <option value="Applications.html#tracescope">TraceScope · Apr 11, 2026</option>
+                <option value="Mini CAD Projects.html#bracket-for-workbench">Bracket for Workbench · Apr 11, 2026</option>
+                <option value="Applications.html#boids">Boids · Nov 5, 2025</option>
+                <option value="Applications.html#python-mouse">Python Mouse · Dec 5, 2024</option>
+                <option value="Practical Projects.html#voltage-divider">Voltage Divider · Oct 3 (year unknown)</option>
+            </select>
+        </section>
+        <script>
+            function openPortfolioProject() {
+                const destination = document.getElementById('home-project-select').value;
+                if (destination) window.location.href = destination;
+            }
+        </script>
     </body>
 </html>
